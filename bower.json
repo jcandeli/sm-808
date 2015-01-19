@@ -1,0 +1,22 @@
+{
+  "name": "sm-808",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jcandeli/sm-808",
+  "authors": [
+    "JP Candelier"
+  ],
+  "description": "angular drum machine",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.9",
+    "bootstrap": "~3.3.1"
+  }
+}
