@@ -1,10 +1,13 @@
-# angular.module('ngTemplates', [])
-# angular.module('controllers', [])
-# angular.module('directives', [])
-# angular.module('services', [])
+angular.module('ngTemplates', [])
+angular.module('controllers', [])
+angular.module('directives', [])
+angular.module('services', [])
 
-sm808App = angular.module('sm808App',
-    []
+module.exports = angular.module('sm808App',
+    [
+        'ngTemplates'
+        'controllers'
+        'directives'
+        'services'
+    ]
 )
-
-module.exports = sm808App

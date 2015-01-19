@@ -9,7 +9,7 @@ module.exports =
 
     scss:
         files: ['<%= pkg.src %>/**/*.scss']
-        tasks: ['sass:dist', 'notify:dist']
+        tasks: ['sass:dist', 'notify:sass']
 
     options:
         livereload: true

@@ -1,4 +1,10 @@
-body {
-  background: red; }
+.sequencer .sample {
+  display: inline-block;
+  padding: 5px;
+  width: 100px; }
+.sequencer .note {
+  width: 30px; }
+.sequencer .notes {
+  display: inline-block; }
 
 /*# sourceMappingURL=styles.css.map */

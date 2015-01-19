@@ -1,0 +1,19 @@
+<div class="sequencer">
+    <div ng-repeat="beat in beats">
+
+        <ul class="list-unstyled">
+            <li ng-repeat="(sample, sequence) in beat.sequence">
+
+                <div class="sample">{{sample}}</div>
+
+                <ul class="list-inline notes">
+                    <li ng-repeat="note in sequence track by $index" class="note">
+                        {{note}}
+                    </li>
+                </ul>
+
+            </li>
+        </ul>
+
+    </div>
+</div>

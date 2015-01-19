@@ -1,3 +1,16 @@
-body {
-    background: red;
+.sequencer {
+    .sample {
+        display: inline-block;
+        padding: 5px;
+        width: 100px;
+    }
+
+    .note {
+        width: 30px;
+    }
+
+    .notes {
+        display: inline-block;
+
+    }
 }
