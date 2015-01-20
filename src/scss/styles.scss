@@ -1,16 +1,134 @@
+$base-padding: 10px;
+$base-margin: 10px;
+$highlight-color: #C8301F;
+$dark-color: #2e2c31;
+$light-color: #888f91;
+
+body {
+    background-color: #dcdac3;
+}
+
+h1, h2, h3, h4, h5 {
+    margin-top: $base-margin / 2;
+    margin-bottom: $base-margin / 4;
+}
+
+h4 {
+    color: $highlight-color;
+}
+
+a {
+    color: $dark-color;
+
+    &[ng-click] {
+        cursor: pointer;
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 40px;
+}
+
+.padded {
+    padding: $base-padding;
+}
+
+.padded-lg {
+    padding: $base-padding * 2;
+}
+
+.padded-sm {
+    padding: $base-padding / 2;
+}
+
+.margined {
+    margin: $base-margin;
+}
+
+.margined-lg {
+    margin: $base-margin * 2;
+}
+
+.margined-sm {
+    margin: $base-margin / 2;
+}
+
+.bordered {
+    border: solid $light-color 2px;
+}
+
+.btn-primary, 
+.btn-primary:hover {
+    background-color: #f19a23;
+    color: $dark-color;
+    border: none;
+    border-radius: 0;
+    border: solid #fffcce 2px;
+    margin-top: $base-margin * 2;
+}
+
 .sequencer {
+    display: inline-block;
+    @extend .padded-lg;
+    @extend .margined-lg;
+    background-color: $dark-color;
+    color: $light-color;
+    border: solid #121115 4px;
+
+    h1 {
+        text-align: right;
+        color: $highlight-color;
+        margin-bottom: $base-margin;
+    }
+
+    .info {
+        @extend .padded-lg;
+        @extend .bordered;
+        margin-bottom: $base-margin * 2;
+    }
+
     .sample {
         display: inline-block;
-        padding: 5px;
         width: 100px;
+        background-color: #f3e9c9;
+        color: $dark-color;
+        @extend .padded-sm;
     }
 
     .note {
-        width: 30px;
+        width: 31px;
+        height: 30px;
+        background-color: $light-color;
+        border-left: solid $dark-color 1px;
+
+        /* hacky! */
+        position: relative;
+        top: 10px;
+        left: 5px;
+
+        &:nth-of-type(4n - 3) {
+            border-left: solid $dark-color 3px;
+        }
+
+        &.selected {
+            background-color: #f59c23;
+        }
+
+        &.playing {
+            background-color: lighten($light-color, 10%);
+        }
+
+        &.selected.playing {
+            background-color: #f85e29;
+        }
     }
 
     .notes {
         display: inline-block;
-
     }
 }
