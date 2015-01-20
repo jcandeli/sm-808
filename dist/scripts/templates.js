@@ -5,7 +5,10 @@ angular.module('sm808App').run(['$templateCache', function($templateCache) {
     "<div>\n" +
     "\n" +
     "    <div class=\"sequencer\">\n" +
-    "        <h1>SM-808</h1>\n" +
+    "        <h1>\n" +
+    "            <img src=\"splice-logo.png\" />\n" +
+    "            M-808\n" +
+    "        </h1>\n" +
     "\n" +
     "        <div class=\"info\">\n" +
     "            <h3>{{beat.name}}</h3>\n" +
@@ -38,7 +41,7 @@ angular.module('sm808App').run(['$templateCache', function($templateCache) {
     "        </a>\n" +
     "    </div>\n" +
     "\n" +
-    "    <div class=\"margined\">\n" +
+    "    <div class=\"margined-lg\">\n" +
     "        <h4>Beats</h4>\n" +
     "\n" +
     "        <ul class=\"list-unstyled\">\n" +

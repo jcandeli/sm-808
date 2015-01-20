@@ -5,6 +5,12 @@ h1, h2, h3, h4, h5 {
   margin-top: 5px;
   margin-bottom: 2.5px; }
 
+h1 > img {
+  height: 30px;
+  position: relative;
+  bottom: 4px;
+  left: 8px; }
+
 h4 {
   color: #c8301f; }
 

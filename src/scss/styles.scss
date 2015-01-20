@@ -13,6 +13,13 @@ h1, h2, h3, h4, h5 {
     margin-bottom: $base-margin / 4;
 }
 
+h1 > img {
+    height: 30px;
+    position: relative;
+    bottom: 4px;
+    left: 8px;
+}
+
 h4 {
     color: $highlight-color;
 }
