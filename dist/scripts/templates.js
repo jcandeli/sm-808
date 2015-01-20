@@ -34,10 +34,10 @@ angular.module('sm808App').run(['$templateCache', function($templateCache) {
     "            </ul>\n" +
     "        </div>\n" +
     "\n" +
-    "        <a ng-click=\"toggleState()\" class=\"btn btn-primary\">\n" +
+    "        <a ng-click=\"toggleState()\" class=\"btn btn-primary\" ng-switch=\"state\">\n" +
     "            <i class=\"glyphicon\" ng-class=\"{'glyphicon-play': state == 'stopped', 'glyphicon-stop': state == 'playing'}\"></i>\n" +
-    "            <span ng-if=\"state == 'stopped'\">Start</span>\n" +
-    "            <span ng-if=\"state == 'playing'\">Stop</span>\n" +
+    "            <span ng-switch-when=\"stopped\">Start</span>\n" +
+    "            <span ng-switch-when=\"playing\">Stop</span>\n" +
     "        </a>\n" +
     "    </div>\n" +
     "\n" +

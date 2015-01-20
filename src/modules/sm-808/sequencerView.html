@@ -30,10 +30,10 @@
             </ul>
         </div>
 
-        <a ng-click="toggleState()" class="btn btn-primary">
+        <a ng-click="toggleState()" class="btn btn-primary" ng-switch="state">
             <i class="glyphicon" ng-class="{'glyphicon-play': state == 'stopped', 'glyphicon-stop': state == 'playing'}"></i>
-            <span ng-if="state == 'stopped'">Start</span>
-            <span ng-if="state == 'playing'">Stop</span>
+            <span ng-switch-when="stopped">Start</span>
+            <span ng-switch-when="playing">Stop</span>
         </a>
     </div>
 
