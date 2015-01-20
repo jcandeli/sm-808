@@ -3,6 +3,7 @@ SM-808 Sequencer project
 
 # To run project
 ```
+npm install
 grunt connect
 ```
 
